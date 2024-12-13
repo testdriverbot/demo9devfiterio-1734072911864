@@ -1,0 +1,68 @@
+version: 4.1.30
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Click the login form's "Username" field and enter a username.
+    commands:
+      - command: hover-text
+        text: Username *
+        description: username field in the login form
+        action: click
+      - command: type
+        text: testuser
+  - prompt: Click the login form's "Password" field and enter a password.
+    commands:
+      - command: hover-text
+        text: Password *
+        description: password field in the login form
+        action: click
+      - command: type
+        text: securepassword
+  - prompt: Click the "Login" button.
+    commands:
+      - command: hover-text
+        text: Login
+        description: login button on the form
+        action: click
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
+  - prompt: >-
+      Assert that the user is successfully logged in or an appropriate message
+      is displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Username is required and Password is required messages are displayed
